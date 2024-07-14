@@ -42,7 +42,7 @@ $conn->close();
     <title>Login</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
-<body>
+<body class="login-page">
     <div class="login-container">
         <h2>Login</h2>
         <?php if ($error): ?>

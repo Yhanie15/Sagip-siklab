@@ -2,8 +2,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    /* Background image with transparency */
-    background: rgba(255, 255, 255, 0.5) url('../images/bg.jpg') center/cover no-repeat; /* Adjust transparency as needed */
+    background-color: #f0f0f0; /* Gray background for dashboard and other pages */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +10,13 @@ body {
     margin: 0;
 }
 
+
 /* Login and Registration Page Styles */
+
+body.login-page{
+    background: url('../images/bg.jpg') center/cover no-repeat; /* Adjust transparency as needed */
+
+}
 
 .login-container {
     background-color: rgba(255, 255, 255, 0.8);
@@ -73,7 +78,7 @@ button:hover {
 /* Sidebar Styles */
 .sidebar {
     width: 250px;
-    background-color: #f0f0f0;
+    background-color: 	#636363;
     height: 100%;
     position: fixed;
     top: 0;
@@ -94,13 +99,13 @@ button:hover {
 
 .user-profile i {
     font-size: 36px;
-    color: #333;
+    color: #fff;
     margin-bottom: 10px;
 }
 
 .user-profile span {
     display: block;
-    color: #666;
+    color: #fff;
 }
 
 .sidebar-menu {
@@ -115,7 +120,7 @@ button:hover {
 .sidebar-menu li a {
     display: block;
     padding: 10px;
-    color: #333;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -133,7 +138,7 @@ button:hover {
 }
 
 .logout a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -152,7 +157,7 @@ button:hover {
 
 .notifications a {
     font-size: 36px;
-    color: #ccc;
+    color: #636363;
     text-decoration: none;
 }
 
@@ -188,7 +193,7 @@ button:hover {
 /* Incidents Page Styles */
 /* Style for the incident table */
 .incident-table {
-    
+    margin: 0 auto; /* Center the table horizontally */
     margin-bottom: 20px;
     border-collapse: collapse;
     border-radius: 5px;
@@ -214,3 +219,10 @@ button:hover {
 }
 
 /* Style for the interactive map */
+.map-container {
+    margin: 0 auto; /* Center the table horizontally */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+   
+}

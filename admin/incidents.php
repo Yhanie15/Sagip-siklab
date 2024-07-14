@@ -51,7 +51,7 @@ $incidents = [
         </ul>
         <!-- Logout link at the bottom -->
         <div class="logout">
-            <a href="logout.php"><i class="material-icons">exit_to_app</i> Logout</a>
+            <a href="login.php"><i class="material-icons">exit_to_app</i> Logout</a>
         </div>
     </div>
     <div class="content">
@@ -89,12 +89,11 @@ mapboxgl.accessToken = 'pk.eyJ1IjoieWhhbmllMTUiLCJhIjoiY2x5bHBrenB1MGxmczJpczYxb
 const map = new mapboxgl.Map({
 	container: 'map', // container ID
 	style: 'mapbox://styles/mapbox/streets-v12', // style URL
-	center: [-74.5, 40], // starting position [lng, lat]
-	zoom: 9, // starting zoom
+	center: [121.043861, 14.676208], // starting position [lng, lat]
+    zoom: 12, // starting zoom
 });
 </script>
         </div>
     </div>
-    <!-- JavaScript for Google Maps API -->
 </body>
 </html>
