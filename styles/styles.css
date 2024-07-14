@@ -1,15 +1,17 @@
+/* Existing styles.css */
+
 body {
     font-family: Arial, sans-serif;
-    background-image: url('../images/bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    /* Background image with transparency */
+    background: rgba(255, 255, 255, 0.5) url('../images/bg.jpg') center/cover no-repeat; /* Adjust transparency as needed */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
+
+/* Login and Registration Page Styles */
 
 .login-container {
     background-color: rgba(255, 255, 255, 0.8);
@@ -64,4 +66,165 @@ button:hover {
 .success {
     color: green;
     margin-bottom: 15px;
+}
+
+/* Dashboard Specific Styles */
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #f0f0f0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    padding-top: 20px;
+}
+
+.sidebar-top {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.user-profile {
+    margin-bottom: 20px;
+}
+
+.user-profile i {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.user-profile span {
+    display: block;
+    color: #666;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar-menu li a:hover {
+    background-color: #ddd;
+}
+
+.logout {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.logout a {
+    color: #333;
+    text-decoration: none;
+}
+
+.logout a i {
+    margin-right: 5px;
+}
+
+/* Content Styles */
+.content {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    margin-left: 250px;
+    padding: 20px;
+    position: relative; /* Ensure content area is positioned relative for absolute positioning */
+}
+
+.notifications a {
+    font-size: 36px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.notifications a:hover {
+    text-decoration: underline;
+}
+
+.dashboard-section {
+    background-color: #fff;
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    flex: 1 0 auto; /* Flex properties to control sizing */
+    min-width: 200px; /* Minimum width to maintain consistent size */
+    max-width: calc(100% - 20px); /* Maximum width minus margin */
+}
+
+.dashboard-section h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 20px; /* Adjust margin as needed */
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 60px; /* Adjust margin as needed */
+}
+
+.dashboard-section p {
+    text-align: center;
+}
+
+/* Incidents Page Styles */
+/* Style for the incident table */
+.incident-table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.incident-table th,
+.incident-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.incident-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.incident-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Style for the interactive map */
+.map-container {
+    width: 250px;
+    height: 250px; /* Adjust height as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+#map {
+    width: 250px; /* Adjust width as needed */
+    height: 100%;
+    transform: translateX(-10%); /* Centering map */
 }
