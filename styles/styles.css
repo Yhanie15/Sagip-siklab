@@ -214,17 +214,3 @@ button:hover {
 }
 
 /* Style for the interactive map */
-.map-container {
-    width: 100%;
-    height: 250px; /* Adjust height as needed */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 20px;
-    overflow: hidden; /* Ensure content doesn't overflow */
-}
-
-#map {
-    width: 150%; /* Adjust width as needed */
-    height: 100%;
-    transform: translateX(-10%); /* Centering map */
-}

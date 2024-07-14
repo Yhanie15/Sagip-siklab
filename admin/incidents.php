@@ -31,6 +31,8 @@ $incidents = [
     <link rel="stylesheet" href="../styles/styles.css"> <!-- Link to your combined styles.css file -->
     <!-- Material Icons CDN -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
     <div class="sidebar">
@@ -81,29 +83,18 @@ $incidents = [
         <!-- Interactive map below the table -->
         <div class="map-container">
             <!-- Replace with your interactive map code -->
-            <div id="map"></div>
+            <div id='map' style='width: 1000px; height: 300px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoieWhhbmllMTUiLCJhIjoiY2x5bHBrenB1MGxmczJpczYxbjRxbGxsYSJ9.DPO8TGv3Z4Q9zg08WhfoCQ';
+const map = new mapboxgl.Map({
+	container: 'map', // container ID
+	style: 'mapbox://styles/mapbox/streets-v12', // style URL
+	center: [-74.5, 40], // starting position [lng, lat]
+	zoom: 9, // starting zoom
+});
+</script>
         </div>
     </div>
     <!-- JavaScript for Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
-    <script>
-        // Initialize and bind the map
-        function initMap() {
-            const mapElement = document.getElementById("map");
-            const mapOptions = {
-                center: { lat: 40.7128, lng: -74.0060 }, // Example: New York City coordinates
-                zoom: 12 // Example zoom level
-            };
-            const map = new google.maps.Map(mapElement, mapOptions);
-            
-            // Example marker (replace with actual markers based on incidents data)
-            const marker = new google.maps.Marker({
-                position: { lat: 40.7128, lng: -74.0060 },
-                map: map,
-                title: "Sample Location"
-            });
-        }
-        google.maps.event.addDomListener(window, 'load', initMap);
-    </script>
 </body>
 </html>
