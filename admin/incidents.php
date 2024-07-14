@@ -84,5 +84,26 @@ $incidents = [
             <div id="map"></div>
         </div>
     </div>
+    <!-- JavaScript for Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script>
+        // Initialize and bind the map
+        function initMap() {
+            const mapElement = document.getElementById("map");
+            const mapOptions = {
+                center: { lat: 40.7128, lng: -74.0060 }, // Example: New York City coordinates
+                zoom: 12 // Example zoom level
+            };
+            const map = new google.maps.Map(mapElement, mapOptions);
+            
+            // Example marker (replace with actual markers based on incidents data)
+            const marker = new google.maps.Marker({
+                position: { lat: 40.7128, lng: -74.0060 },
+                map: map,
+                title: "Sample Location"
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
 </body>
 </html>
