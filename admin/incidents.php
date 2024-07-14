@@ -89,7 +89,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoieWhhbmllMTUiLCJhIjoiY2x5bHBrenB1MGxmczJpczYxb
 const map = new mapboxgl.Map({
 	container: 'map', // container ID
 	style: 'mapbox://styles/mapbox/streets-v12', // style URL
-	center: [121.043861, 14.676208], // starting position [lng, lat]
+	center: [121.049309, 14.651489], // starting position [lng, lat]
     zoom: 12, // starting zoom
 });
 </script>
