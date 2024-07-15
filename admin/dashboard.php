@@ -37,9 +37,9 @@ $stmt->close();
         <ul class="sidebar-menu">
             <li><a href="dashboard.php"><i class="material-icons">dashboard</i> Dashboard</a></li>
             <li><a href="incidents.php"><i class="material-icons">error_outline</i> Incidents</a></li>
-            <li><a href="#"><i class="material-icons">local_fire_department</i> Calls</a></li>
-            <li><a href="#"><i class="material-icons">check_circle</i> Dispatches</a></li>
-            <li><a href="#"><i class="material-icons">assignment</i> Reports</a></li>
+            <li><a href="calls.php"><i class="material-icons">local_fire_department</i> Calls</a></li>
+            <li><a href="dispatches.php"><i class="material-icons">check_circle</i> Dispatches</a></li>
+            <li><a href="reports.php"><i class="material-icons">assignment</i> Reports</a></li>
         </ul>
         <!-- Logout link at the bottom -->
         <div class="logout">

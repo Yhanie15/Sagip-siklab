@@ -54,7 +54,7 @@ $conn->close();
     <title>Register</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
-<body>
+<body class="login-page">
     <div class="login-container">
         <h2>Register</h2>
         <?php if ($error): ?>

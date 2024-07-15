@@ -13,14 +13,8 @@ $stmt->bind_result($name);
 $stmt->fetch();
 $stmt->close();
 
-// Sample data for incidents (replace with actual data retrieval from database)
-$incidents = [
-    ["id" => 1, "location" => "Street A", "time_reported" => "2024-07-15 08:30:00", "level" => "High", "status" => "Active"],
-    ["id" => 2, "location" => "Street B", "time_reported" => "2024-07-15 09:15:00", "level" => "Medium", "status" => "Resolved"],
-    ["id" => 3, "location" => "Street C", "time_reported" => "2024-07-15 10:00:00", "level" => "Low", "status" => "Active"],
-    // Add more incident data as needed
-];
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -58,45 +52,7 @@ $incidents = [
         </div>
     </div>
     <div class="content">
-        <table class="incident-table">
-            <thead>
-                <tr>
-                    <th>Incident ID</th>
-                    <th>Location</th>
-                    <th>Time Reported</th>
-                    <th>Level</th>
-                    <th>Status</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($incidents as $incident): ?>
-                <tr>
-                    <td><?php echo $incident['id']; ?></td>
-                    <td><?php echo $incident['location']; ?></td>
-                    <td><?php echo $incident['time_reported']; ?></td>
-                    <td><?php echo $incident['level']; ?></td>
-                    <td><?php echo $incident['status']; ?></td>
-                    <td><a href="#" class="view-btn"><i class="material-icons">visibility</i> View</a></td>
-                </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
-
-        <!-- Interactive map below the table -->
-        <div class="map-container">
-            <!-- Replace with your interactive map code -->
-            <div id='map' style='width: 1000px; height: 300px;'></div>
-<script>
-mapboxgl.accessToken = 'pk.eyJ1IjoieWhhbmllMTUiLCJhIjoiY2x5bHBrenB1MGxmczJpczYxbjRxbGxsYSJ9.DPO8TGv3Z4Q9zg08WhfoCQ';
-const map = new mapboxgl.Map({
-	container: 'map', // container ID
-	style: 'mapbox://styles/mapbox/streets-v12', // style URL
-	center: [121.049309, 14.651489], // starting position [lng, lat]
-    zoom: 12, // starting zoom
-});
-</script>
-        </div>
+        
     </div>
 </body>
 </html>
